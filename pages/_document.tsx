@@ -24,6 +24,17 @@ export default class MyDocument extends Document {
             title="Jamify RSS Feed"
             href={`${resolve(processEnv.siteUrl, 'rss.xml')}`}
           />
+           <script async src="https://www.googletagmanager.com/gtag/js?id=G-6BQFHE8J0J"></script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6BQFHE8J0J');`,
+            }}
+          />
         </Head>
         <body {...{className: bodyClass}}>
           <script
