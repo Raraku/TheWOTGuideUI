@@ -14,7 +14,7 @@ module.exports = withBundleAnalyzer({
       'res-2.cloudinary.com',
       'res-3.cloudinary.com',
       'res-4.cloudinary.com',
-      'res-5.cloudinary.com',
+      'res-6.cloudinary.com',
       'res.cloudinary.com',
       'static.gotsby.org',
       'static.ghost.org',
