@@ -29,17 +29,18 @@ interface PageProps {
 
 export const Page = ({ cmsData }: PageProps) => {
   const { page, settings, seoImage, bodyClass } = cmsData
-  const { meta_title, meta_description } = page
+  const { meta_title, meta_description, title, excerpt } = page
   const { nextImages } = settings.processEnv
 
   const featImg = page.featureImage
   const postClass = PostClass({ tags: page.tags, isPage: page && true, isImage: !!featImg })
   const htmlAst = page.htmlAst
   if (htmlAst === undefined) throw Error('Page.tsx: htmlAst must be defined.')
+  console.log(page)
 
   return (
     <>
-      <SEO {...{ settings, meta_title, meta_description, seoImage }} />
+      <SEO {...{ settings, meta_title, meta_description, seoImage }} title={title} description={excerpt} />
       <Layout {...{ settings, bodyClass }} header={<HeaderPage {...{ settings }} />}>
         <div className="inner">
           <article className={`post-full ${postClass}`}>
