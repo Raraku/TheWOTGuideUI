@@ -9,6 +9,8 @@ module.exports = withBundleAnalyzer({
     domains: [
       'localhost',
       'images.unsplash.com',
+      'res-3.cloudinary.com',
+      'res.cloudinary.com',
       'static.gotsby.org',
       'static.ghost.org',
       'gatsby.ghost.io',
