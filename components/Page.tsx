@@ -36,7 +36,6 @@ export const Page = ({ cmsData }: PageProps) => {
   const postClass = PostClass({ tags: page.tags, isPage: page && true, isImage: !!featImg })
   const htmlAst = page.htmlAst
   if (htmlAst === undefined) throw Error('Page.tsx: htmlAst must be defined.')
-  console.log(page)
 
   return (
     <>
