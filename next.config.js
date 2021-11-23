@@ -18,6 +18,8 @@ module.exports = withBundleAnalyzer({
       'opensubscriptionplatforms.com',
       'repository-images.githubusercontent.com',
       'www.gravatar.com',
+      'thewotguide.com',
+      'www.thewotguide.com',
       'www.amazon.com',
       'fls-na.amazon.com',
       '*.amazon.com',
