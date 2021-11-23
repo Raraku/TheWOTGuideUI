@@ -3,4 +3,5 @@ module.exports = {
   siteUrl: 'https://thewotguide.com',
   generateRobotsTxt: true,
   sitemapSize: 7000,
+  changefreq: 'hourly',
 }
