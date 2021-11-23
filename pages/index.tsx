@@ -39,10 +39,9 @@ export default function Index({ cmsData }: IndexProps) {
   if (router.isFallback) return <div>Loading...</div>
 
   const { settings, posts, seoImage, bodyClass } = cmsData
-
   return (
     <>
-      <SEO {...{ settings, seoImage }} />
+      <SEO {...{ settings, seoImage }} seoImage={settings.coverImage} />
       <StickyNavContainer
         throttle={300}
         activeClass="fixed-nav-active"
