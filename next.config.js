@@ -25,6 +25,7 @@ module.exports = withBundleAnalyzer({
       'ghost.org',
       'opensubscriptionplatforms.com',
       'repository-images.githubusercontent.com',
+      'wot.fandom.com',
       'www.gravatar.com',
       'thewotguide.com',
       'www.thewotguide.com',

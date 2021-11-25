@@ -595,7 +595,7 @@ html.casper .home-template .site-nav-main .fixed-nav-active {
 /* ---------------------------------------------------------- */
 
 html.casper .posts {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 html.casper .post-feed {

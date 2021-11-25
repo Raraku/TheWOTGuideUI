@@ -60,7 +60,7 @@ export const Post = ({ cmsData }: PostProps) => {
   if (htmlAst === undefined) throw Error('Post.tsx: htmlAst must be defined.')
 
   const collectionPath = collections.getCollectionByNode(post)
-
+  console.log(htmlAst)
   return (
     <>
       <SEO {...{ description, settings, seoImage, article: post, title }} />
